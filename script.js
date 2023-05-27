@@ -37,10 +37,10 @@ function renderTable(data) {
   data.forEach((item) => {
     const row = document.createElement("tr");
     row.innerHTML = `
-       <td><img src="${item.image}" alt="${item.name}" width="30"></td>
+
       <td>${item.name}</td>
       <td>${item.id}</td>
-   
+      <td><img src="${item.image}" alt="${item.name}" width="30"></td>
       <td>${item.symbol}</td>
       <td>${item.current_price}</td>
       <td>${item.total_volume}</td>
