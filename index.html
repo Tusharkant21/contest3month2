@@ -1,24 +1,41 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <button onclick="PrintStudentswithMap()">
-      Console log Students with Map
-    </button>
-    <button onclick="PrintStudentsbyForEach()">
-      Console log Students with foreach
-    </button>
-    <button onclick="addData()">Console New Data with 4th Student</button>
-    <button onclick="removeFailedStudent()">Remove Failed Student</button>
-    <button onclick="concatenateArray()">concatenateArray</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fetch api data</title>
+</head>
+<body style="margin: 20px>
+  
+  <input type="text" id="searchInput" placeholder="Search...">
+  <button id="searchButton" >Search</button>
+  <button id="sortMarketCapButton">Sort by Market Cap</button>
+  <button id="sortPercentageButton">Sort by Percentage Change</button>
+  
+  <table id="dataTable"S>
+    <thead >
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>ID</th>
+        
+        <th>Symbol</th>
+        <th>Price</th>
+        <th>Volume</th>
+        <th>Percentage Change</th>
+        <th>Market Cap</th>
+      </tr>
+    </thead>
+    <tbody id="dataBody"></tbody>
+  </table>
 
-    <script src="./script.js"></script>
-  </body>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
+
+</body>
 </html>
